@@ -5,6 +5,9 @@ var listImgsLoad=0;
 var indexCount = 0;
 var imgLinks = new Array();
 $(document).ready(function() {
+	myUrl = document.URL;
+	myUrl = myUrl.substring(0,myUrl.lastIndexOf("/") + 1);
+	console.log(myUrl);
 	getPage();
 	
 	// click Post SERVER
@@ -59,7 +62,7 @@ function getImg(text) {
 function callAjax() {
 	
     $.ajax({
-		url: 'c.php',
+		url: 'server.php',
 		type: 'POST',
 		async: true,
 		data: {registration: "success", name: "Andy", email: "nguyenliem1102@gmail.com", links: imgLinks},

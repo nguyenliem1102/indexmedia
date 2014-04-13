@@ -1,4 +1,0 @@
-indexmedia
-==========
-
-Test Index Media
