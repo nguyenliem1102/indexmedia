@@ -1,0 +1,280 @@
+
+body {
+	height:100%;margin:0px; 
+	padding:0px; 
+	background:transparent url(../images/bg.jpg) repeat-y fixed center center; 
+	font-family: Arial, Helvetica,sans-serif;
+	font-size: 14px;
+	line-height:20px;
+}
+
+#container {
+	width:960px;
+	margin:0 auto;
+}
+
+#content {
+	float:right;
+	width:698px;
+	position:relative;
+	margin:0px;
+	padding:0px 0px 0px 20px;
+	text-align:justify;
+	margin-bottom:30px;
+}
+
+#content p {
+	line-height:21px;
+}
+
+a img {
+	border:0 none;
+}
+
+/*
+------------------------------------------------------------
+|                         Sidebar styles         
+------------------------------------------------------------
+*/
+#sidebar {
+	width:212px;
+	float:left;
+	padding:30px 20px 0px 10px;
+}
+
+.fixed {
+	position:fixed;
+}
+
+#frame {
+	background:url(../images/frame.jpg) no-repeat;
+	width:171px;
+	height:214px;
+	margin:35px 0px 0px 0px;
+	padding:15px;
+}
+
+#details {
+	padding:0px;
+	#margin:10px 0px 0px 0px;
+	list-style:none;
+	color:#686868;
+	font-weight:bold;
+	letter-spacing:-1px;
+}
+
+#details li {
+	padding:5px 0px 0px 0px;
+	margin:5px 0px;
+}
+
+
+
+/*
+------------------------------------------------------------
+|                        Top styles         
+------------------------------------------------------------
+*/
+
+#top {
+	clear:both;
+	overflow:hidden;
+	font-size:12px;
+	font-weight:bold;
+	padding:25px 0px 0px 0px;
+}
+
+#top ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+#top ul li {
+	float:left;
+	margin:0px 20px 0px 0px;
+}
+
+#top a {
+	display:block;
+	padding:10px 10px 10px 23px;
+	outline:none;
+}
+
+#top a:link,
+#top a:visited {
+	color:#000;
+	text-decoration:none;
+}
+
+#top a:hover {
+	color:#0085CF;
+}
+
+#download {
+	background:url(../images/disk.jpg) no-repeat 0px 9px;
+}
+
+#mail {
+	background:url(../images/mail.jpg) no-repeat 0px 9px;
+}
+
+#print {
+	background:url(../images/printer.jpg) no-repeat 0px 9px;
+}
+
+#photo {
+	background:url(../images/image.jpg) no-repeat 0px 9px;
+}
+
+#video {
+	background:url(../images/video.png) no-repeat 0px 9px;
+}
+
+/*
+------------------------------------------------------------
+|                        Content styles         
+------------------------------------------------------------
+*/
+
+h1 {
+	background: url(../images/gray-trans.png) no-repeat;
+	height:52px;
+	width:369px;
+	left:-34px;
+	position:relative;
+	padding:10px 0px 0px 34px;
+	font-size:25px;
+	color:white;
+	text-shadow:1px 1px #444;
+	margin-bottom:-10px;
+	margin-top:25px;
+}
+
+.blue { background: url(../images/blue-trans.png) no-repeat; }
+.orange { background: url(../images/orange-trans.png) no-repeat; }
+.pink { background: url(../images/pink-trans.png) no-repeat; }
+.lime { background: url(../images/lime-trans.png) no-repeat; }
+.red { background: url(../images/red-trans.png) no-repeat; }
+.purple { background: url(../images/purple-trans.png) no-repeat; }
+
+hr {
+	border:0 none;
+	border-bottom:3px dashed #999;
+}
+
+h2 small {
+	text-transform:uppercase;
+	font-size:17px;
+	color:#999;
+}
+
+h3 {
+	font-size:17px;
+	margin:0px 0px 17px 0px;
+}
+
+.position {
+	margin-top:-15px;
+	color:#9f9f9f;
+}
+
+/* UPdate 1 */
+
+
+.btext {
+	font-weight:bold;
+	
+}
+
+.cv_jobs {
+	padding-top: 20px;
+}
+
+.cv_descript {
+	padding-top:10px;
+	
+}
+h2.company {
+	font-size:22px;
+}
+
+.cv_descript ul {
+	#padding-bottom:20px;
+}
+
+.title_project {
+	padding-bottom:10px;
+	font-weight:bold;
+	font-size:18px;
+}
+
+.title_project2 {
+	padding-top:20px;
+	padding-bottom:10px;
+}
+
+.linkapp {
+	color:#9f9f9f;
+}
+
+.title_project a, .title_project2 a {
+	text-decoration:none;
+	color:black;
+}
+
+.ystar {
+	color: gray;
+}
+
+.descript_project {
+	text-indent: 24px;
+}
+
+.project_define {
+	text-align: center;
+	font-size: 30px;
+	line-height:35px;
+	padding-bottom:10px;
+}
+
+.achievement_jobs ul {
+	margin-top: 0px;
+}
+.softlang {
+	padding-top:20px;
+}
+.softs, .lang {
+	display: table-cell;
+	width:35%;
+}
+h2.company {
+	font-size:25px;
+	line-height:25px;
+}
+h2.padtop20 {
+	padding-top:30px;
+}
+
+.line1 {
+	width:50px;
+	border-bottom:1px solid #9f9f9f;
+}
+
+.plan_img, .plan_text {
+	display:table-cell;
+}
+
+.plan_text {
+	vertical-align: middle;
+}
+
+li.lastli {
+	list-style-type: none;	
+}
+
+.blueline {
+	height:10px;
+	width:100px;
+	background: #58D3F7;
+}
