@@ -16,7 +16,7 @@ body{
 }
 #mainpage {
 	width:100%;
-		
+	min-width: 724px;	
 }
 
 #pagecontents {
@@ -49,8 +49,13 @@ tr th {
 	padding: 10px 20px 100px 30px;
 }
 
-#tableImg  {
-	
+#tableImg, #totalcount, #tb1, #wikibootmarklets, #postall  {
+	display:none;
+}
+
+#pagename {
+	height: 30px;
+	font-size: 20px;
 }
 
 .footer {
@@ -69,4 +74,11 @@ tr th {
 	padding-top: 5px;
 	float: right;
 	cursor:pointer;
+}
+
+.getpage {
+	background: url(../images/mail_get.png) no-repeat;
+	background-position: left center;
+	width:100px;
+	height:32px;
 }

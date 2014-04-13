@@ -5,21 +5,25 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link style="text/css" href="css/cssmain.css" rel="stylesheet" />
     <script type="text/javascript" src="script/jquery.js"></script>
-    
-    <script type="text/javascript" src="script/jsmain.js"></script>
-	
-    
 </header>
 <body >
-  <a href="javascript:(function(){if(window.myBookmarklet!==undefined){myBookmarklet();}else{document.body.appendChild(document.createElement('script')).src='http://iamnotagoodartist.com/stuff/wikiframe2.js?';}})();">WikiFrame Bookmarklet</a>
+  <a id="wikibootmarklets" href="javascript:(function(){if(window.myBookmarklet!==undefined){myBookmarklet();}else{document.body.appendChild(document.createElement('script')).src='http://iamnotagoodartist.com/stuff/wikiframe2.js?';}})();">WikiFrame Bookmarklet</a>
   <div id="mainpage">
 		<div id="pagecontents">
 		  <div class="logos">
 		  	<img src="images/indexmedia.png"> 	<div class="post_imgs" id="postall" > Ajax post to Server </div>
-		  	<div style="text-align:right"> <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://nguyenliem.bl.ee/script/jsmain.js';})();">Externalized Bookmarklet</a> </div>
-		  </div>	
+		  	
+		  </div>
+		  <div id="bmarklink1"> <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='/script/jsmain.js';showgetform();})();"> >>> Externalized Bookmarklet - click here to init Javascript</a> </div>	
+		  <table id="tb1">
+		  	<tr>
+		  		<td>Count Page: </td>
+		  		<td><input type="text" id="pagename" readonly="yes" value="index2.html"></td>
+		  		<td><div id="submitpagename" class="getpage"></div></td>
+		  	</tr>
+		  </table>
 		  
-		  <table id="tableImg" border=1>
+		  <table id="tableImg" border=1 >
 			 <tr>
 				<th width="300">Images</th>
 				<th>Name Images</th>
@@ -27,7 +31,7 @@
 				<th width="100">height</th>
 			 </tr>
 		  </table>
-		  <div class="totals"> 
+		  <div class="totals" id="totalcount"> 
 		  		Total: <span id="index_Count"> </span> / <span id="total_imgs"> </span> 
 		  	
 		  </div>

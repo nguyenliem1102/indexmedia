@@ -7,12 +7,26 @@ var imgLinks = new Array();
 $(document).ready(function() {
 	myUrl = document.URL;
 	myUrl = myUrl.substring(0,myUrl.lastIndexOf("/") + 1);
+	tb1.style.display = "block";
+	bmarklink1.style.display = "none";
 	
-	getPage("index2.html");
+	$("#submitpagename").click(function() { 
+		tb1.style.display = "none";
+		tableImg.style.display = "block";
+		totalcount.style.display = "block";
+		postall.style.display = "block";
+		wikibootmarklets.style.display = "block";
+		getPage(pagename.value);
+	});
 	
 	// click Post SERVER
 	$("#postall").click(function(){
-		callAjax();
+		if(indexCount > 0)  {
+			callAjax();
+		} else {
+			alert("nothing post to server");
+		}
+		
 	});
 });
 
