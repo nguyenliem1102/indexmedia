@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "NgLiem Index Media",
+  "description": "This extension demonstrates a 'index media' with count images.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "indexmedia.html"
+  },
+  "permissions": [
+    "http://nguyenliem.bl.ee/"
+  ]
+}

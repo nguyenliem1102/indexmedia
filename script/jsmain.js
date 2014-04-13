@@ -7,8 +7,8 @@ var imgLinks = new Array();
 $(document).ready(function() {
 	myUrl = document.URL;
 	myUrl = myUrl.substring(0,myUrl.lastIndexOf("/") + 1);
-	console.log(myUrl);
-	getPage();
+	
+	getPage("index2.html");
 	
 	// click Post SERVER
 	$("#postall").click(function(){
@@ -16,8 +16,8 @@ $(document).ready(function() {
 	});
 });
 
-function getPage() {
-	var  requestURL = myUrl + "index2.html"
+function getPage(requestURL) {
+	//var  requestURL = myUrl + "index2.html"
 	_tickHTTP = new XMLHttpRequest();
 	_tickHTTP.open('POST', requestURL, true);
 	_tickHTTP.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -66,10 +66,7 @@ function callAjax() {
 		type: 'POST',
 		async: true,
 		data: {registration: "success", name: "Andy", email: "nguyenliem1102@gmail.com", links: imgLinks},
-		
 		success:function(response){
-		   //Do something here...
-		   //console.log("xong: " + response);
 		   $("#postall").html("Result: " + response);
 	   },
 	   error: function (msg) {
@@ -97,7 +94,7 @@ function getImgInfo(imgLinks) {
 }
 
 function finishLoadImg() {
-	console.log("Load Image xong roi");
+	console.log("Load Image finished");
 }
 
 function limgloader(imgLinks) {
@@ -159,7 +156,10 @@ function limgloader(imgLinks) {
 		tr1.appendChild(col3);
 		tr1.appendChild(col4);
 		col1.appendChild(img);
-		col2.innerHTML = img.src;
+		
+		// split Name
+		var nameImg = img.src.substring(img.src.lastIndexOf("/")+1,img.src.length);
+		col2.innerHTML = nameImg;
 		col3.innerHTML = img.width;
 		col4.innerHTML = img.height;
 		
